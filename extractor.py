@@ -1,6 +1,6 @@
 import pandas as pd
 
-from tables_representations import *
+from table_representations import *
 
 class Extractor:
     def __init__(self):
