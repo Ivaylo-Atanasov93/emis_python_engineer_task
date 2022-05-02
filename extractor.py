@@ -1,6 +1,5 @@
-import pandas as pd
-
 from table_representations import *
+
 
 class Extractor:
     def __init__(self):
@@ -404,7 +403,6 @@ class Extractor:
                 ignore_index=True,
                 axis=0,
             )
-            # template.reset_index()
             template.name = name
             final_data_frames.append(template)
         return final_data_frames
