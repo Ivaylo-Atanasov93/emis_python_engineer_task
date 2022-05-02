@@ -1,0 +1,60 @@
+,Reference,ReactionText,Severity
+0,921ee519-8d03-bf70-2e25-98bb207728c6,Rhinoconjunctivitis (disorder),moderate
+1,921ee519-8d03-bf70-2e25-98bb207728c6,Wheal (finding),mild
+2,921ee519-8d03-bf70-2e25-98bb207728c6,Eruption of skin (disorder),mild
+3,44707ac0-8c99-4a9e-5764-96b855ad9cfd,Eruption of skin (disorder),moderate
+4,ca4f7535-318a-5e9c-8bc0-cdb94ee320a8,Finding of vomiting (finding),moderate
+5,76a69b6f-8405-0e77-22e4-b9d7a894c797,Wheal (finding),moderate
+6,26aee0a1-570d-2dfc-8433-6af6294bf307,Itching (finding),mild
+7,26aee0a1-570d-2dfc-8433-6af6294bf307,Anaphylaxis (disorder),severe
+8,26aee0a1-570d-2dfc-8433-6af6294bf307,Eruption of skin (disorder),moderate
+9,26aee0a1-570d-2dfc-8433-6af6294bf307,Allergic angioedema (disorder),moderate
+10,26aee0a1-570d-2dfc-8433-6af6294bf307,Wheal (finding),moderate
+11,88e00f1a-b58d-b1ba-c8be-bb77deca1d07,Allergic skin rash,mild
+12,13a08e75-d689-dff0-367d-b99727c5a245,Rhinoconjunctivitis (disorder),moderate
+13,13a08e75-d689-dff0-367d-b99727c5a245,Wheal (finding),mild
+14,13a08e75-d689-dff0-367d-b99727c5a245,Eruption of skin (disorder),mild
+15,632c6919-5e7e-ba1e-71d8-54feb6a6a453,Wheal (finding),mild
+16,632c6919-5e7e-ba1e-71d8-54feb6a6a453,Nausea (finding),moderate
+17,632c6919-5e7e-ba1e-71d8-54feb6a6a453,Eruption of skin (disorder),moderate
+18,d33aff5f-d9f5-4922-4a36-ce5def48799c,Rhinoconjunctivitis (disorder),moderate
+19,d33aff5f-d9f5-4922-4a36-ce5def48799c,Wheal (finding),mild
+20,f3f40b6c-1c3d-290b-3711-5c8863ef5380,Rhinoconjunctivitis (disorder),moderate
+21,f3f40b6c-1c3d-290b-3711-5c8863ef5380,Cough (finding),moderate
+22,f3f40b6c-1c3d-290b-3711-5c8863ef5380,Wheal (finding),mild
+23,f3f40b6c-1c3d-290b-3711-5c8863ef5380,Eruption of skin (disorder),mild
+24,f9f42d26-55af-6f3e-325b-526dc6b3a909,Finding of vomiting (finding),moderate
+25,f9f42d26-55af-6f3e-325b-526dc6b3a909,Wheal (finding),mild
+26,6fa9f04c-8bf7-06d5-66a6-0309d41d2210,Diarrhea (finding),mild
+27,9170dfcd-b5a4-7ab2-1d3c-6edddf49e5e6,Allergic angioedema (disorder),moderate
+28,9170dfcd-b5a4-7ab2-1d3c-6edddf49e5e6,Eruption of skin (disorder),moderate
+29,989e9216-eba6-49be-e358-b6841a01d266,Allergic angioedema (disorder),moderate
+30,b94d3d01-dd7f-dae8-d3ab-03cc11c3c417,Eruption of skin (disorder),moderate
+31,b94d3d01-dd7f-dae8-d3ab-03cc11c3c417,Itching (finding),mild
+32,b94d3d01-dd7f-dae8-d3ab-03cc11c3c417,Anaphylaxis (disorder),severe
+33,54b4a9d5-8801-0795-144d-f88705193185,Rhinoconjunctivitis (disorder),moderate
+34,54b4a9d5-8801-0795-144d-f88705193185,Wheal (finding),mild
+35,54b4a9d5-8801-0795-144d-f88705193185,Eruption of skin (disorder),mild
+36,e57cc034-838f-7fe7-c290-16accde0cb63,Rhinoconjunctivitis (disorder),moderate
+37,e57cc034-838f-7fe7-c290-16accde0cb63,Cough (finding),moderate
+38,35c097ec-9230-193a-bee2-f7da4b0e9883,Abdominal pain (finding),moderate
+39,f3c58c75-f31e-9eca-9c46-af9e4e2b250c,Diarrhea (finding),mild
+40,f3c58c75-f31e-9eca-9c46-af9e4e2b250c,Wheal (finding),mild
+41,4d19f260-831d-b440-8b02-949355518251,Wheal (finding),moderate
+42,701f1f34-318f-b667-5e64-3bf2acda7686,Allergic skin rash,mild
+43,701f1f34-318f-b667-5e64-3bf2acda7686,Nose running,mild
+44,dfe66827-36bd-3d67-a348-431bb919d23b,Rhinoconjunctivitis (disorder),moderate
+45,dfe66827-36bd-3d67-a348-431bb919d23b,Cough (finding),moderate
+46,b7405f8c-252f-a979-0ab4-63a91c1b1ecc,Allergic skin rash,mild
+47,ad55a7e8-bc71-a314-eb24-01a5283fef48,Dyspnea (finding),mild
+48,ad55a7e8-bc71-a314-eb24-01a5283fef48,Eruption of skin (disorder),mild
+49,5eabfdd7-2ad4-0bda-c7ed-6d5e7d3b2e52,Wheal (finding),mild
+50,726020a4-0605-9491-eff1-3c162b21609d,Diarrhea (finding),mild
+51,726020a4-0605-9491-eff1-3c162b21609d,Wheal (finding),moderate
+52,523ff97e-4c3f-1d9a-a783-9cac2b8668f0,Itching (finding),mild
+53,523ff97e-4c3f-1d9a-a783-9cac2b8668f0,Anaphylaxis (disorder),severe
+54,523ff97e-4c3f-1d9a-a783-9cac2b8668f0,Eruption of skin (disorder),moderate
+55,523ff97e-4c3f-1d9a-a783-9cac2b8668f0,Cough (finding),moderate
+56,523ff97e-4c3f-1d9a-a783-9cac2b8668f0,Allergic angioedema (disorder),moderate
+57,523ff97e-4c3f-1d9a-a783-9cac2b8668f0,Dyspnea (finding),moderate
+58,523ff97e-4c3f-1d9a-a783-9cac2b8668f0,Wheal (finding),moderate
