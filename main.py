@@ -1,16 +1,22 @@
-# This is a sample Python script.
-
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+from worker import Worker
+from credentials import password, user, address, db_name
 
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
-
-
-# Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+    raw_information_json_files_path = 'sample_files/'  # This is a path to the
+    # folder that contains the files that we`re going to transform.
+    db_credentials = {
+        'user': user,
+        'password': password,
+        'address': address,
+        'db_name': db_name,
+    }
+    output_folder = 'output/'
+    export_as_type = 'postgresql'  # DEFAULT = csv
+    x = Worker(
+        raw_information_json_files_path,
+        credentials=db_credentials,
+        export_folder=output_folder,
+        export_as=export_as_type,
+    )
+    x.collect_info()
