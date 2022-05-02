@@ -113,10 +113,6 @@ DOCUMENT_REFERENCE = pd.DataFrame(
         'EncounterReference',
         'ContentAttachmentType'
         'ContentAttachmentData',
-        'FormatDisplay',
-        'ContentType',
-        'ContentData',
-        'ContextEncounter',
         'ContextPeriodStart',
         'ContextPeriodEnd',
     ]
@@ -194,7 +190,7 @@ IMMUNIZATION = pd.DataFrame(
     ]
 )
 
-MEDICATION = pd.DataFrame(  # _____________________________________________Done
+MEDICATION = pd.DataFrame(
     columns=[
         'MedicationUID',
         'CodeText'
@@ -225,7 +221,7 @@ MEDICATION_ADMINISTRATION = pd.DataFrame(
     ]
 )
 
-MEDICATION_REQUEST = pd.DataFrame(  # _____________________________________Done
+MEDICATION_REQUEST = pd.DataFrame(
     columns=[
         'MedicationRequestUID',
         'Status',
@@ -239,7 +235,7 @@ MEDICATION_REQUEST = pd.DataFrame(  # _____________________________________Done
     ]
 )
 
-OBSERVATION = pd.DataFrame(  # ____________________________________________Done
+OBSERVATION = pd.DataFrame(
     columns=[
         'ObservationUID',
         'Status',
@@ -254,7 +250,7 @@ OBSERVATION = pd.DataFrame(  # ____________________________________________Done
     ]
 )
 
-PATIENT = pd.DataFrame(  # ________________________________________________Done
+PATIENT = pd.DataFrame(
     columns=[
         'PatientUID',
         'TextStatus',
@@ -269,7 +265,7 @@ PATIENT = pd.DataFrame(  # ________________________________________________Done
     ]
 )
 
-PROCEDURE = pd.DataFrame(  # ______________________________________________Done
+PROCEDURE = pd.DataFrame(
     columns=[
         'ProcedureUID',
         'Status',
@@ -282,14 +278,14 @@ PROCEDURE = pd.DataFrame(  # ______________________________________________Done
     ]
 )
 
-PROVENANCE = pd.DataFrame(  # _____________________________________________Done
+PROVENANCE = pd.DataFrame(
     columns=[
         'ProvenanceID',
         'Recorded',
     ]
 )
 
-SUPPLY_DELIVERY = pd.DataFrame(  # ________________________________________Done
+SUPPLY_DELIVERY = pd.DataFrame(
     columns=[
         'SupplyDeliveryUID',
         'Status',
@@ -300,26 +296,12 @@ SUPPLY_DELIVERY = pd.DataFrame(  # ________________________________________Done
     ]
 )
 
-NUMBER_OF_INSTANCES = pd.DataFrame(  # ____________________________________Done
-    columns=[
-        'Reference',
-        'InstanceUID',
-        'SopClassSystem',
-        'SopClassCode',
-        'Number',
-        'Title',
-    ]
-)
-
 EXTENSION = pd.DataFrame(
     columns=[
         'Reference',
         'Url',
         'ValueString',
         'valueDecimal',
-        'ValueAddressCity',
-        'ValueAddressState',
-        'ValueAddressCountry',
     ]
 )
 
@@ -382,7 +364,7 @@ ADDRESS = pd.DataFrame(
     ]
 )
 
-CONTAINED = pd.DataFrame(  # ______________________________________________Done
+CONTAINED = pd.DataFrame(
     columns=[
         'Reference',
         'ResourceType',
@@ -396,7 +378,7 @@ CONTAINED = pd.DataFrame(  # ______________________________________________Done
     ]
 )
 
-NAME = pd.DataFrame(  # ___________________________________________________Done
+NAME = pd.DataFrame(
     columns=[
         'Reference',
         'Use',
@@ -409,13 +391,12 @@ NAME = pd.DataFrame(  # ___________________________________________________Done
 REACTION = pd.DataFrame(
     columns=[
         'Reference',
-        # Manifestation -> Coding
         'ReactionText',
         'Severity',
     ]
 )
 
-DOSAGE_INSTRUCTION = pd.DataFrame(  # _____________________________________Done
+DOSAGE_INSTRUCTION = pd.DataFrame(
     columns=[
         'Reference',
         'Sequence',
@@ -424,7 +405,7 @@ DOSAGE_INSTRUCTION = pd.DataFrame(  # _____________________________________Done
     ]
 )
 
-IDENTIFIER = pd.DataFrame(  # _____________________________________________Done
+IDENTIFIER = pd.DataFrame(
     columns=[
         'Reference',
         'System',
@@ -441,7 +422,7 @@ TELECOM = pd.DataFrame(
     ]
 )
 
-MANAGING_ORGANIZATION = pd.DataFrame(  # __________________________________Done
+MANAGING_ORGANIZATION = pd.DataFrame(
     columns=[
         'Reference',
         'ManagingOrganizationReference',
@@ -457,23 +438,6 @@ FORM = pd.DataFrame(
     ]
 )
 
-# ROLES = pd.DataFrame(  # ______________________________________________NOT Done
-#     columns=[
-#         'Reference',
-#         # Coding -> Coding
-#         'RoleText',
-#         'MemberReference',
-#         'MemberDisplay',
-#     ]
-# )
-
-CATEGORY = pd.DataFrame(  # _______________________________________________Done
-    columns=[
-        'Reference',
-        'Category',
-    ]
-)
-
 UDI_CARRIER = pd.DataFrame(
     columns=[
         'Reference',
@@ -482,17 +446,10 @@ UDI_CARRIER = pd.DataFrame(
     ]
 )
 
-TARGET = pd.DataFrame(  # _________________________________________________Done
+TARGET = pd.DataFrame(
     columns=[
         'Reference',
         'TargetReference',
-    ]
-)
-
-REASON_REFERENCE = pd.DataFrame(  # _______________________________________Done
-    columns=[
-        'Reference',
-        'ReasonReference',
     ]
 )
 
@@ -503,7 +460,7 @@ COMMUNICATION = pd.DataFrame(
     ]
 )
 
-PERFORMER = pd.DataFrame(  # ______________________________________________Done
+PERFORMER = pd.DataFrame(
     columns=[
         'Reference',
         'PerformerReference',
