@@ -1,7 +1,7 @@
 import pandas as pd
 
 
-ALLERGY_INTOLERANCE = pd.DataFrame(  # ____________________________________Done
+ALLERGY_INTOLERANCE = pd.DataFrame(
     columns=[
         'AllergyIntoleranceUID',
         'Type',
@@ -9,23 +9,15 @@ ALLERGY_INTOLERANCE = pd.DataFrame(  # ____________________________________Done
         'Criticality',
         'Patient',
         'EncounterReference',
-        # Reaction -> Reaction
         'RecordedDate',
-        'LastOccurance',
-        'Note',
-        # VerificationStatus -> Coding
-        # ClinicalStatus -> Coding
-        # Code -> Coding
-        # ReactionManifestation -> Coding
     ]
 )
 
-CARE_PLAN = pd.DataFrame(  # ______________________________________________Done
+CARE_PLAN = pd.DataFrame(
     columns=[
         'CarePlanUID',
         'Status',
         'Intent',
-        # CategoryCode -> Coding
         'CategoryText',
         'SubjectReference',
         'EncounterReference',
@@ -33,11 +25,10 @@ CARE_PLAN = pd.DataFrame(  # ______________________________________________Done
         'PeriodEnd',
         'CareTeamReference'
         'AddressReference',
-        # Activities -> Activities
     ]
 )
 
-CARE_TEAM = pd.DataFrame(  # ______________________________________________Done
+CARE_TEAM = pd.DataFrame(
     columns=[
         'CareTeamUID',
         'Status',
@@ -45,19 +36,14 @@ CARE_TEAM = pd.DataFrame(  # ______________________________________________Done
         'EncounterReference',
         'PeriodStart',
         'PeriodEnd',
-        # Participants -> Role
-        # ReasonCode -> Coding
-        # ManagingOrganization -> Managing Organization
-        # Telecom -> Coding
         'Note',
     ]
 )
 
-CLAIM = pd.DataFrame(  # __________________________________________________Done
+CLAIM = pd.DataFrame(
     columns=[
         'ClaimUID',
         'Status',
-        # Type -> Coding
         'Use',
         'PatientReference',
         'PatientDisplay',
@@ -66,24 +52,16 @@ CLAIM = pd.DataFrame(  # __________________________________________________Done
         'Created',
         'ProviderReference',
         'ProviderDisplay',
-        # PriorityCode -> Coding
-        # Insurance -> Insurance
         'FacilityReference',
         'FacilityDisplay',
-        # Diagnosis -> Diagnosis
-        # Item -> Item
         'TotalValue',
         'TotalCurrency',
     ]
 )
 
-CONDITION = pd.DataFrame(  # ______________________________________________Done
+CONDITION = pd.DataFrame(
     columns=[
         'ConditionUID',
-        # ClinicalStatusCode -> Coding
-        # VerificationStatusCode -> Coding
-        # Category -> Coding
-        # Coding -> Coding
         'CodeText'
         'Severity',
         'SubjectReference',
@@ -94,10 +72,9 @@ CONDITION = pd.DataFrame(  # ______________________________________________Done
     ]
 )
 
-DEVICE = pd.DataFrame(  # _________________________________________________Done
+DEVICE = pd.DataFrame(
     columns=[
         'DeviceUID',
-        # UdiCarrier -> Udi_Carrier,
         'Status',
         'Manufacturer',
         'ManufactureDate',
@@ -106,7 +83,6 @@ DEVICE = pd.DataFrame(  # _________________________________________________Done
         'SerialNumber',
         'DeviceName',
         'DeviceNameType',
-        # DeviceType -> Coding
         'DeviceTypeText',
         'PatientReference',
     ]
@@ -116,26 +92,18 @@ DIAGNOSTIC_REPORT = pd.DataFrame(  # ______________________________________Done
     columns=[
         'DiagnosticReportUID',
         'Status',
-        # CategoryCodes -> Coding
-        # CodeCoding -> Coding
         'PatientReference',
         'EncounterReference',
         'EffectiveDateTime',
         'IssuedDateTime',
-        'PerformerReference',
-        'PerformerDisplay',
-        # PresentedForm -> Form
         'Conclusion',
     ]
 )
 
-DOCUMENT_REFERENCE = pd.DataFrame(  # _____________________________________Done
+DOCUMENT_REFERENCE = pd.DataFrame(
     columns=[
         'DocumentReferenceUID',
-        # Identifier -> Identifier
         'Status',
-        # DocumentType -> Coding
-        # CategoryCoding -> Coding
         'SubjectReference',
         'Date',
         'AuthorReference',
@@ -154,18 +122,15 @@ DOCUMENT_REFERENCE = pd.DataFrame(  # _____________________________________Done
     ]
 )
 
-ENCOUNTER = pd.DataFrame(  # ______________________________________________Done
+ENCOUNTER = pd.DataFrame(
     columns=[
         'EncounterUID',
         'Status',
-        'ClassSystem',
-        'ClassCode',
-        # TypeCode -> Coding
         'SubjectReference',
         'SubjectDisplay',
         'ParticipantType',
         'ParticipantName',
-        'ParticipantReference'
+        'ParticipantReference',
         'PeriodStart',
         'PeriodEnd',
         'LocationReference',
@@ -175,12 +140,10 @@ ENCOUNTER = pd.DataFrame(  # ______________________________________________Done
     ]
 )
 
-EXPLANATION_OF_BENEFIT = pd.DataFrame(  # _________________________________Done
+EXPLANATION_OF_BENEFIT = pd.DataFrame(
     columns=[
         'ExplanationOfBenefitUID',
-        # Identifier -> Identifier
         'Status',
-        # TypeCoding -> Coding
         'Use',
         'PatientReference',
         'BillablePeriodStart',
@@ -203,27 +166,24 @@ EXPLANATION_OF_BENEFIT = pd.DataFrame(  # _________________________________Done
     ]
 )
 
-IMAGING_STUDY = pd.DataFrame(  # __________________________________________Done
+IMAGING_STUDY = pd.DataFrame(
     columns=[
         'ImagingStudyUID',
-        # Identifier, -> Identifier
         'Status',
         'SubjectReference',
         'EncounterReference',
         'Started',
         'NumberOfSeries',
         'NumberOfInstances',
-        # ProcedureCode -> Coding
         'LocationReference',
         'LocationDisplay',
     ]
 )
 
-IMMUNIZATION = pd.DataFrame(  # ___________________________________________Done
+IMMUNIZATION = pd.DataFrame(
     columns=[
-        'ImunizationUID',
+        'ImmunizationUID',
         'Status',
-        # VaccineCode  -> Coding
         'VaccineCodeText',
         'PatientReference',
         'EncounterReference',
@@ -237,7 +197,6 @@ IMMUNIZATION = pd.DataFrame(  # ___________________________________________Done
 MEDICATION = pd.DataFrame(  # _____________________________________________Done
     columns=[
         'MedicationUID',
-        # Code     -> Coding
         'CodeText'
         'Status',
     ]
@@ -248,27 +207,21 @@ ITEM = pd.DataFrame(
         'Reference',
         'Sequence',
         'DiagnosticSequence'
-        # CategoryCoding -> Coding
         'productOrServiceText',
-        #ProductOfServiceCode -> Coding
         'ServicePeriodStart',
         'ServicePeriodEnd',
-        # LocationCodableConcept -> Coding
         'EncounterReference',
     ]
 )
 
-MEDICATION_ADMINISTRATION = pd.DataFrame(  # ______________________________Done
+MEDICATION_ADMINISTRATION = pd.DataFrame(
     columns=[
         'MedicationAdministrationUID',
         'Status',
-        # MedicationCodeableConceptCode -> Coding
         'SubjectReference',
         'ContextReference',
         'EffectiveDateTime',
         'ReasonReference',
-        'DosageValue',
-        'DosageRateQuantity'
     ]
 )
 
@@ -277,14 +230,12 @@ MEDICATION_REQUEST = pd.DataFrame(  # _____________________________________Done
         'MedicationRequestUID',
         'Status',
         'Intent',
-        # MedicationCodeableConceptCode -> Coding
         'SubjectReference',
         'EncounterReference',
         'AuthoredOn',
         'RequesterReference',
         'RequesterDisplay',
         'ReasonReference',
-        #dosageInstruction -> DosageInstruction
     ]
 )
 
@@ -292,8 +243,6 @@ OBSERVATION = pd.DataFrame(  # ____________________________________________Done
     columns=[
         'ObservationUID',
         'Status',
-        # Category -> Coding
-        # Code     -> Coding
         'SubjectReference',
         'EncounterReference',
         'EffectiveDateTime',
@@ -310,18 +259,11 @@ PATIENT = pd.DataFrame(  # ________________________________________________Done
         'PatientUID',
         'TextStatus',
         'TextDiv',
-        # Extensions -> Extensions
-        # Identifier -> Identifier
-        # Names -> Names
-        # Telecom -> Coding
         'Gender',
         'DateOfBirth',
         'Deceased',
-        # Address -> Address,
         'MartialStatusText'
-        # MaritalStatus -> Coding,
         'MultipleBirth',
-        # Communication -> Communication
         'GeneralPractitioner',
         'ManagingOrganisation'
     ]
@@ -331,7 +273,6 @@ PROCEDURE = pd.DataFrame(  # ______________________________________________Done
     columns=[
         'ProcedureUID',
         'Status',
-        # Code -> Coding
         'SubjectReference',
         'EncounterReference',
         'PerformedPeriodStart',
@@ -344,9 +285,7 @@ PROCEDURE = pd.DataFrame(  # ______________________________________________Done
 PROVENANCE = pd.DataFrame(  # _____________________________________________Done
     columns=[
         'ProvenanceID',
-        # TargetReferences -> Target
         'Recorded',
-        # Agent -> Agent
     ]
 )
 
@@ -355,11 +294,9 @@ SUPPLY_DELIVERY = pd.DataFrame(  # ________________________________________Done
         'SupplyDeliveryUID',
         'Status',
         'PatientReference',
-        # Type -> Coding,
         'SuppliedItemQuantity',
         'SuppliedItemText',
-        # SuppliedItemCode
-        'OccuranceDateTime',
+        'OccurrenceDateTime',
     ]
 )
 
@@ -374,7 +311,7 @@ NUMBER_OF_INSTANCES = pd.DataFrame(  # ____________________________________Done
     ]
 )
 
-EXTENSION = pd.DataFrame(  # ______________________________________________Done
+EXTENSION = pd.DataFrame(
     columns=[
         'Reference',
         'Url',
@@ -383,7 +320,6 @@ EXTENSION = pd.DataFrame(  # ______________________________________________Done
         'ValueAddressCity',
         'ValueAddressState',
         'ValueAddressCountry',
-        # ValueCoding -> Coding
     ]
 )
 
@@ -438,7 +374,6 @@ ACTIVITIES = pd.DataFrame(
 ADDRESS = pd.DataFrame(
     columns=[
         'Reference',
-        # Extension -> Extension
         'Line',
         'City',
         'State',
@@ -457,7 +392,6 @@ CONTAINED = pd.DataFrame(  # ______________________________________________Done
         'Subject',
         'Requester',
         'Performer',
-        'Beneficiary',
         'Payor',
     ]
 )
@@ -523,15 +457,15 @@ FORM = pd.DataFrame(
     ]
 )
 
-ROLES = pd.DataFrame(  # ______________________________________________NOT Done
-    columns=[
-        'Reference',
-        # Coding -> Coding
-        'RoleText',
-        'MemberReference',
-        'MemberDisplay',
-    ]
-)
+# ROLES = pd.DataFrame(  # ______________________________________________NOT Done
+#     columns=[
+#         'Reference',
+#         # Coding -> Coding
+#         'RoleText',
+#         'MemberReference',
+#         'MemberDisplay',
+#     ]
+# )
 
 CATEGORY = pd.DataFrame(  # _______________________________________________Done
     columns=[
@@ -562,11 +496,10 @@ REASON_REFERENCE = pd.DataFrame(  # _______________________________________Done
     ]
 )
 
-COMMUNICATION = pd.DataFrame(  # __________________________________________Done
+COMMUNICATION = pd.DataFrame(
     columns=[
         'Reference',
         'LanguageText',
-        # Coding -> Coding  # _____________________________________________Done
     ]
 )
 
@@ -575,5 +508,14 @@ PERFORMER = pd.DataFrame(  # ______________________________________________Done
         'Reference',
         'PerformerReference',
         'PerformerDisplay',
+    ]
+)
+
+PARTICIPANT = pd.DataFrame(
+    columns=[
+        'Reference',
+        'RoleText',
+        'MemberReference',
+        'MemberDisplay',
     ]
 )
